@@ -1,0 +1,223 @@
+/*----------------------------------------------------------------------*/
+/* SITE Settings */
+/*----------------------------------------------------------------------*/
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+    scroll-snap-type: y mandatory;
+  }
+    
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+      font-family: 'Maven Pro', sans-serif;
+    }
+  }
+    
+  body {
+    margin-bottom: 60px;
+    transition: transform 2s all ease;
+    scroll-behavior: smooth;
+  }
+  
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /*---END-OF-SITE-SECTION-----------------------------------------------------*/
+
+
+  /*----------------------------------------------------------------------*/
+/* Nav Links Effects */
+/*----------------------------------------------------------------------*/
+li a.active {
+    background: linear-gradient(45deg,#083576,#07E1FA);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out; 
+    border: 0;
+    color: #fff;
+}
+
+.nav-link:hover {
+    background: linear-gradient(45deg,#083576,#07E1FA);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out; 
+    border: 0;
+    color: #fff;
+}
+/*-----END-OF-NAV-LINKS-EFFECTS-----------------------------------------*/
+
+  
+
+/*----------------------------------------------------------------------------*/
+/* Waving Hand Animation Settings */
+/*----------------------------------------------------------------------------*/
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+/*---END-OF-WAVING-HAND-ANIMATION-SECTION-------------------------------------*/
+
+  
+/*---------------------------------------------------------------------------*/
+/* Home Page Settings */
+/*---------------------------------------------------------------------------*/
+.introsection {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* The image used */
+    background-image: url(images/homebg.jpg);
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    row-gap: 2rem;
+    text-align: center;
+}
+
+.aboutsection {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* The image used */
+    background-image: url(images/textilebg.jpg);
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    row-gap: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.projectsection {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* The image used */
+    background-image: url(images/abt_blue_bg.jpg);
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.contactsection {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    /* The image used */
+    /* background-color: #303030; */
+    background-image: url(images/contactme.jpg);
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* text-align: center; */
+    /* color: #fff; */
+}
+/*---END-OF-HOME-PAGE-SECTION------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------*/
+/* Home Page Section */
+/*----------------------------------------------------------------------*/
+.skillsection {
+    background-image: url(./images/skillbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+/*-----END-OF-HOME-PAGE-SECTION--------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+/* Projects Page Settings */
+/*----------------------------------------------------------------------*/
+.procard {
+  background-color: none;
+  cursor: pointer;
+}
+
+.procard:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.2s ease-in-out; 
+  border: 0;
+}
+
+.markupcard:hover {
+  background: linear-gradient(45deg,#f63237,#ff6c2e);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in-out; 
+  border: 0;
+  color: #fff;
+}
+
+.skillcard:hover {
+  background: linear-gradient(45deg,#f25827,#ffc40d);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in-out; 
+  border: 0;
+  color: #fff;
+}
+
+.contactcard:hover {
+  background: linear-gradient(45deg,#5d99b1,#e8f7fe);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in-out; 
+  border: 0;
+  color: #fff;
+}
+/*-----END-OF-DASHBOARD-SECTION-------------------------------------------*/
