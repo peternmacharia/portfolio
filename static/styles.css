@@ -95,27 +95,6 @@ li a.active {
     /* The image used */
     background-image: url(images/homebg.jpg);
     /* Full height */
-    /* height: 100%;  */
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    row-gap: 2rem;
-    text-align: center;
-}
-
-.aboutsection {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* The image used */
-    background-image: url(images/textilebg.jpg);
-    /* Full height */
     height: 100%; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -124,50 +103,6 @@ li a.active {
     background-size: cover;
     row-gap: 2rem;
     text-align: center;
-    color: #fff;
-}
-
-.projectsection {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* The image used */
-    background-image: url(images/abt_blue_bg.jpg);
-    /* Full height */
-    height: 100%; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-}
-
-.contactsection {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    bottom: 0;
-    align-items: center;
-    justify-content: center;
-    /* The image used */
-    /* background-color: #303030; */
-    /* background-image: url(images/contactme.jpg); */
-    /* Full height */
-    height: 100%; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* text-align: center; */
-    /* color: #fff; */
 }
 
 .contactSection {
