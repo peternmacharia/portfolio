@@ -95,7 +95,7 @@ li a.active {
     /* The image used */
     background-image: url(images/homebg.jpg);
     /* Full height */
-    height: 100%; 
+    /* height: 100%;  */
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -158,7 +158,7 @@ li a.active {
     justify-content: center;
     /* The image used */
     /* background-color: #303030; */
-    background-image: url(images/contactme.jpg);
+    /* background-image: url(images/contactme.jpg); */
     /* Full height */
     height: 100%; 
     /* Create the parallax scrolling effect */
@@ -168,6 +168,16 @@ li a.active {
     background-size: cover;
     /* text-align: center; */
     /* color: #fff; */
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  flex-direction: column;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
 }
 /*---END-OF-HOME-PAGE-SECTION------------------------------------------------*/
 
@@ -221,3 +231,59 @@ li a.active {
   color: #fff;
 }
 /*-----END-OF-DASHBOARD-SECTION-------------------------------------------*/
+
+
+.skill-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: #fff;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.skill-card i {
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover i {
+  transform: scale(1.2);
+}
+
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.project-placeholder {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.4em 0.6em;
+}
+
+.recent-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.collab-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
