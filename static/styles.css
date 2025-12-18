@@ -129,66 +129,29 @@ li a.active {
 /*-----END-OF-HOME-PAGE-SECTION--------------------------------------*/
 
 /*----------------------------------------------------------------------*/
-/* Projects Page Settings */
+/* Card hover Settings */
 /*----------------------------------------------------------------------*/
-.procard {
-  background-color: none;
-  cursor: pointer;
-}
-
-.procard:hover {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  transition: all 0.2s ease-in-out; 
-  border: 0;
-}
-
-.markupcard:hover {
-  background: linear-gradient(45deg,#f63237,#ff6c2e);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  transition: all 0.2s ease-in-out; 
-  border: 0;
-  color: #fff;
-}
-
-.skillcard:hover {
-  background: linear-gradient(45deg,#f25827,#ffc40d);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  transition: all 0.2s ease-in-out; 
-  border: 0;
-  color: #fff;
-}
-
-.contactcard:hover {
-  background: linear-gradient(45deg,#5d99b1,#e8f7fe);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  transition: all 0.2s ease-in-out; 
-  border: 0;
-  color: #fff;
-}
-/*-----END-OF-DASHBOARD-SECTION-------------------------------------------*/
-
-
-.skill-card {
+.styledcard {
   transition: all 0.3s ease;
   cursor: pointer;
   background: #fff;
 }
 
-.skill-card:hover {
+.styledcard:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.skill-card i {
+.styledcard i {
   transition: transform 0.3s ease;
 }
 
-.skill-card:hover i {
+.styledcard:hover i {
   transform: scale(1.2);
 }
 
 
-.card-img-top {
+.cardimg-top {
     height: 200px;
     object-fit: cover;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -222,3 +185,4 @@ li a.active {
     left: 10px;
     z-index: 10;
 }
+/*-----END-OF-DASHBOARD-SECTION-------------------------------------------*/
