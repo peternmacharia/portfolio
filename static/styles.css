@@ -85,25 +85,28 @@ li a.active {
 /* Home Page Settings */
 /*---------------------------------------------------------------------------*/
 .introsection {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* The image used */
     background-image: url(images/homebg.jpg);
-    /* Full height */
-    height: 100%; 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    row-gap: 2rem;
-    text-align: center;
+    overflow: hidden;
 }
+
+/* .contactSection {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #212529;
+  overflow: auto;
+} */
 
 .contactSection {
   display: flex;
@@ -113,6 +116,7 @@ li a.active {
   bottom: 0;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 /*---END-OF-HOME-PAGE-SECTION------------------------------------------------*/
 
